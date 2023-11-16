@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+}
+a{
+    text-decoration: 0;
+}
+nav{
+    display: flex;
+    background-color:#97DFFC;
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+.icon{
+    background: url('../images/sprite3.png') no-repeat;
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+}
+#twitter{
+    background-position: -66px -72px;
+}
+#fb{
+    background-position: -439px -146px;
+}
+#ig{
+    background-position: -290px -221px;
+
+}
+#yt{
+    background-position: -439px -221px;
+}
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+        background-color: #858ae3;
+    }
+    .pagetitle{
+        background: color #858ae3;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color:#858AE3;
+        min-width: 100vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .links a{
+        color: black;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        display:block;
+    }
+    .links a:hover{background-color: #97DFFC;}
+    nav:hover .links {display:block;}
+    nav:hover .pagetitle{background-color:aquamarine}
+}
